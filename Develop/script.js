@@ -39,20 +39,20 @@ function generatePassword(){
   console.log("Password length " + passwordLength);
 
   if(!passwordLength) {
-    alert("Required value");
+    alert("Value Required");
 
   } else if (passwordLength < 8 || passwordLength > 129) {
     passwordLength = prompt("You must choose between 8 and 129");
     console.log("Password length " + passwordLength);
 
   } else { 
-    confirmLower = confirm("Will this contain lower case letters?");
+    confirmLower = confirm("Do you want password to contain lower case letters?");
     console.log("Lower case " + confirmLower);
-    confirmUpper = confirm("Will this contain upper case letters?");
+    confirmUpper = confirm("Do you want password to contain upper case letters?");
     console.log("Upper case " + confirmUpper);
-    confirmNumber = confirm("Will this contain numbers?");
+    confirmNumber = confirm("Do you want password to contain numbers?");
     console.log("Number " + confirmNumber);
-    confirmSpecial = confirm("Will this contain special characters?");
+    confirmSpecial = confirm("Do you want password to contain special characters?");
     console.log("Special Character " + confirmSpecial);
 
   };
